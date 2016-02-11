@@ -11,8 +11,7 @@
     "url": "git+ssh://git@github.com/linghuaj/binary-tree-deserializer.git"
   },
   "keywords": [
-    "binary",
-    "tree",
+    "binary tree",
     "deserialize",
     "visualize",
     "serialize"
