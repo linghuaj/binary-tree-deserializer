@@ -1,0 +1,29 @@
+{
+  "name": "binary-tree-deserializer",
+  "version": "0.0.1",
+  "description": "Serialize and Deserialize any binary tree; ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/linghuaj/binary-tree-deserializer.git"
+  },
+  "keywords": [
+    "binary",
+    "tree",
+    "deserialize",
+    "visualize",
+    "serialize"
+  ],
+  "author": "Linghua Jin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/linghuaj/binary-tree-deserializer/issues"
+  },
+  "homepage": "https://github.com/linghuaj/binary-tree-deserializer#readme",
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  }
+}
