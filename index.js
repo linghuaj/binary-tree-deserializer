@@ -7,36 +7,23 @@ function TreeNode(val){
 
 //deserialize level tranversal
 function desLevel(arr){
-	console.log('arr', arr)
 	var i = 0;//iterate arry
 	var root = new TreeNode(arr[0]);  
-
 	var queue = [root];
 	while (queue.length > 0){
 		var node = queue.shift();
 		if (node.val == null) continue;
-		i++;
-		// if (i == arr.length){break}
-		console.log('i----', i)
-		var leftVal = arr[i];
-		console.log(leftVal)
-		i++;
-		console.log('i----', i)
-		var rightVal = arr[i];
-		console.log(rightVal)
-		// console.l
+		var leftVal = arr[++i];
+		var rightVal = arr[++i];
 		if (leftVal != null){
-			console.log('leftVal', leftVal)
 			node.left = new TreeNode(leftVal)
 			queue.push(node.left)
 		}
 		if (rightVal!= null){
-			console.log('rightVal', rightVal)
 			node.right = new TreeNode(rightVal)
 			queue.push(node.right)
 		}
 	}
-	console.log('root', root)
 	return root;
 }
 
@@ -51,14 +38,15 @@ function serializeLevel(root){
 			continue;
 		}
 		arr.push(node.val)
-		// if (node.val!= null){
 			queue.push(node.left);
 			queue.push(node.right);
-		// }
 
 
 	}
-	console.log('arr---------------', arr)
+	//remove all the null at last
+	while (arr[arr.length-1] == null){
+		arr.pop()
+	}
 	return arr;
 }
 
