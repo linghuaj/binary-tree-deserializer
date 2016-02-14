@@ -1,7 +1,4 @@
 # A binary tree deserializer/ serializer 
----
-Note: this is a work in progress.
-
 
 Serialization is the process of converting a data structure or object into a sequence of bits so that it can be stored in a file or memory buffer, or transmitted across a network connection link to be reconstructed later in the same or another computer environment.
 
@@ -17,3 +14,5 @@ A use case would be: say you are building a ui with d3 for tree visualization.
 I'm also planning to build a console tool(or maybe later a ui) with it. such that it is easier to visualize the deserialized tree. 
 
 
+---
+Note: this is a work in progress.
